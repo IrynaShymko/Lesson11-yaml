@@ -1,0 +1,36 @@
+environment:
+  intEnv:
+    appUrl: https://seleniumui.moderntester.pl/form.php
+    env_name: intEnv
+    firstName: Albert
+    lastName: Einstein
+    email: AE@example.com
+    command1: Browser Commands
+    command2: Navigation Commands
+    expectedMessage: Form send with success
+    pathToFileForUpload: src/main/resources/fileForUpload.txt
+    active: true
+
+  testEnv:
+    appUrl: https://seleniumui.moderntester.pl/form.php
+    env_name: testEnv
+    firstName: Leonardo
+    lastName: DaVinci
+    email: LD@example.com
+    command1: Switch Commands
+    command2: Wait Commands
+    expectedMessage: Form send with success
+    pathToFileForUpload: src/main/resources/fileForUpload.txt
+    active: false
+
+  defaultEnv:
+    appUrl: https://seleniumui.moderntester.pl/form.php
+    env_name: defaultEnv
+    firstName: Jack
+    lastName: Jackson
+    email: JJ@example.com
+    command1: Browser Commands
+    command2: Navigation Commands
+    expectedMessage: Form send with success
+    pathToFileForUpload: src/main/resources/fileForUpload.txt
+    active: false
