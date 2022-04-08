@@ -1,5 +1,5 @@
 # Lesson11-yaml
-Wprowadzenie mechanizmu konfiguracji na podstawie properties.YAML. Dodać dwa oddzielne zestawy danych konfiguracyjnych w zależności od środowiska.
+Wprowadzenie mechanizmu konfiguracji na podstawie konfiguracji (format -YAML). Dodać dwa oddzielne zestawy danych konfiguracyjnych w zależności od środowiska.
 
 Cel: mieć jeden scenariusz, na tyle dynamiczny aby można go było uruchomić na rożnych środowiskach. Przełączanie między środowiskami musi być maksymalnie łatwe.
 
