@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeAll;
 
 import org.openqa.selenium.WebDriver;
 
-
 public class TestBase {
     private static Logger logger = LoggerFactory.getLogger("TestBase.class");
     protected static WebDriver driver;
@@ -19,7 +18,6 @@ public class TestBase {
         driver=browserEnvironment.getDriver();
         logger.info("<<<<<<<<<<<<<<<<<< Driver started successfully");
         logger.info("<<<<<<<<<<<<<<<<<< NOTE: Test is executed on environment: "+System.getProperty("env_name"));
-        driver.get(System.getProperty("appUrl"));
     }
 
     @AfterAll
