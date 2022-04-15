@@ -30,18 +30,18 @@ public class BrowserEnvironment {
     }
 
     public void setBrowserName() {
-        BrowserYmlReader browserYmlReader = new BrowserYmlReader();
-        if (!browserYmlReader.getBrowser().getBrowserName().equals("")) {
-            this.browserName = browserYmlReader.getBrowser().getBrowserName();
+        YMLreader ymLreader = new YMLreader();
+        if (!ymLreader.getConfiguration().getBrowser().getBrowserName().equals("")) {
+            this.browserName = ymLreader.getConfiguration().getBrowser().getBrowserName();
         } else {
             this.browserName = "chrome";
         }
     }
 
     private void initBrowserSettings() {
-        BrowserYmlReader browserYmlReader = new BrowserYmlReader();
-        this.webElementTimeOut = !String.valueOf(browserYmlReader.getBrowser().getWebElementTimeOut()).equals("0") ? browserYmlReader.getBrowser().getWebElementTimeOut() : this.webElementTimeOut;
-        this.webBrowserImplicitTimeOut = !String.valueOf(browserYmlReader.getBrowser().getWebBrowserImplicitTimeOut()).equals("0") ? browserYmlReader.getBrowser().getWebBrowserImplicitTimeOut() : this.webBrowserImplicitTimeOut;
+        YMLreader ymLreader = new YMLreader();
+        this.webElementTimeOut = ymLreader.getConfiguration().getBrowser().getWebElementTimeOut()!=0? ymLreader.getConfiguration().getBrowser().getWebElementTimeOut() : this.webElementTimeOut;
+        this.webBrowserImplicitTimeOut = ymLreader.getConfiguration().getBrowser().getWebBrowserImplicitTimeOut() !=0 ? ymLreader.getConfiguration().getBrowser().getWebBrowserImplicitTimeOut() : this.webBrowserImplicitTimeOut;
     }
 
     public WebDriver getDriver() {

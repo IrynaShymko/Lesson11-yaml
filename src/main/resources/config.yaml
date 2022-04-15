@@ -1,3 +1,7 @@
+browser:
+  browserName: chrome #firefox
+  webElementTimeOut: 20
+
 environment:
   intEnv:
     appUrl: https://seleniumui.moderntester.pl/form.php

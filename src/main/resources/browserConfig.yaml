@@ -1,5 +1,0 @@
-browserName:
-    chrome
-#    firefox
-webElementTimeOut: 20
-webBrowserImplicitTimeOut: 22
